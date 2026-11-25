@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #17120e;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+header {
+    background: #100c09;
+    border-bottom: 1px solid goldenrod;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+}
+
+nav h2 {
+    color: gold;
+    font-size: 35px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav li {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav li:hover {
+    color: gold;
+}
+
+/* BUTTONS */
+button {
+    background: #ffc72c;
+    color: black;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 400px;
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.8), transparent),
+        url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+/* FEATURES */
+.features {
+    background: #fff1e3;
+    color: #21170f;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+}
+
+/* MENU */
+.menu {
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.menu h2 {
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffc72c;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 12px;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid goldenrod;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    nav ul {
+        display: none;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
